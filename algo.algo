@@ -1,0 +1,16 @@
+ALGORITHM algorithm_name
+VAR
+    st : STRING
+    len , numWord , numVowels   : INTEGER := 0
+BEGIN
+    FOR i FROM 0 TO st.length  DO
+ IF (st[i] <> ' ' AND st[i] <> '.') THEN{
+     len:= len +1 
+ }
+ ELSE IF (st[i] = ' ' OR st[i] = '.')THEN{
+    numWords := numWords + 1
+ }
+  ELSE  IF st[i]  in ['a','i','e','o','u','y'] {
+        numVowels := numVowels +1
+    }
+    END
